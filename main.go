@@ -3,25 +3,21 @@ package main
 import "fmt"
 
 func main() { 
-	age :=19
-		name :="Stephany"
+	//array
+	var arr [5]int = [5]int{1, 2, 3, 4, 5}
+	fmt.Println(arr)
 
-	//print
-	fmt.Print("HELLO, ")
-		fmt.Print("WORLD! \n")
-		fmt.Print("Welcom \n")
-		fmt.Println("hi")
+	names := [3]string{"Alice", "Bob", "Charlie"}
+	fmt.Println(names)
 
-		fmt.Println("my name is", name, "and my age is", age, )
-		//printf(formates strings)
-fmt.Printf("my name is %v and my age is %v \n" , name, age)
-fmt.Printf("my name is %q and my age is %q \n", name, age)
-fmt.Printf("age is an %T \n" , age)
+	//slices
+	slice := []int{10, 20, 30, 40, 50}
+	fmt.Println(slice)
 
-//sprints(save formated strings)
- var str = fmt.Sprintf("my name is %v and my age is %v \n", name, age)
- fmt.Println("the saved string is:", str)
+	//slice ranges
+	rangeSlice := names[1:2] // This will include elements at index 1 and 2
+	fmt.Println(rangeSlice)
+	
+	
+
 }
-
-
-
